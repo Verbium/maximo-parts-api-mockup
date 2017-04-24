@@ -48,6 +48,7 @@ function mxCogItemPartSearch() {
 
 
 // search for parts
+// Karel's example: http://iemc44.atrema.deloitte.com:9080/maxrest/rest/os/MXCOG_ITEMPS?_uw=commoditygroup%3D%27200%27&_maxItems=5
 app.get('/maxrest/rest/os/MXCOG_ITEMPS', function (req, res) {
     console.log('');
     console.log('*******************');
@@ -92,6 +93,7 @@ function getMobRequest(mobreq) {
 
 
 // get a part and it suppliers
+// Karel's example: http://iemc44.atrema.deloitte.com:9080/maxrest/rest/mbo/I_MOBREQUEST/1/I_DISTANCE?_maxItems=10&itemnum=10120&_orderbyasc=distance
 app.get('/maxrest/rest/mbo/I_MOBREQUEST/:mobreq/I_DISTANCE', function (req, res) {
     console.log('Call to I_MOBREQUEST');
     console.log('req.query : '+JSON.stringify(req.query));
